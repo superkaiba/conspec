@@ -1,0 +1,2 @@
+# conspec
+Rewriting ConSpec

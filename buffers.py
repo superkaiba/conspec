@@ -1,9 +1,23 @@
 
 
+class Buffer:
+    def __init__(self, n_trajectories):
+        self.n_trajectories = n_trajectories
+        self.buffer = []
+
+    def add_trajectory(self, trajectory):
+        '''
+        '''
+        pass
+
+
+
 class ConspecBuffer:
     def __init__(self, n_successes, n_failures):
         self.n_successes = n_successes
         self.n_failures = n_failures
+        self.success_buffer = Buffer(n_successes)
+        self.failure_buffer = Buffer(n_failures)
 
     def add_trajectory(self, trajectory):
         '''
@@ -23,13 +37,4 @@ class ConspecBuffer:
         Returns a list of failed trajectories
         '''
 
-
-class Buffer:
-    def __init__(self, n_trajectories):
-        self.n_trajectories = n_trajectories
-        self.buffer = []
-
-    def add_trajectory(self, trajectory):
-        
-    
 

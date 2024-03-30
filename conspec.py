@@ -20,5 +20,5 @@ class Conspec:
     
     def get_intrinsic_reward(self, trajectory):
         '''
-        Returns the intrinsic reward
+        Returns the intrinsic reward for each state in a trajectory
         '''
